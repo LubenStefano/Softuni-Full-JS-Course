@@ -1,0 +1,26 @@
+<section class="hero">
+  <div class="container">
+    <h2>Your One-Stop Shop for Laptops and Computers</h2>
+    <p>Find the best deals on the latest laptops, desktops, and accessories.</p>
+    <a href="/tech" class="btn">Shop Now</a>
+  </div>
+</section>
+
+<section class="products">
+  <div class="container">
+    <h2>Featured Products</h2>
+    {{#each tech}}
+      <div class="product-grid">
+        <div class="product-item">
+          <img src="{{image}}" />
+          <h3>{{brand}} {{model}}</h3>
+          <p>${{price}}</p>
+          <a href="/tech/{{_id}}/details" class="btn">View Details</a>
+        </div>
+      </div>
+    {{else}}
+      <p class="no-post">There haven't been any devices posted yet.</p>
+    {{/each}}
+  </div>
+
+</section>

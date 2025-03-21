@@ -1,0 +1,17 @@
+{
+  "name": "evenorodd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "isOddOrEven.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.4.0"
+  }
+}
